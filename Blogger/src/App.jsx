@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import SkillCompoent from './Project Components/SkillCompoent';
 import ProjectComponent from './Project Components/ProjectCompoent';
 import Footer from './Project Components/Footer';
+import PageDevelop from './Project Components/PageDevelop';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -17,6 +18,7 @@ function App() {
       <AboutPage/>
       <SkillCompoent/>
       <ProjectComponent/>
+      <PageDevelop/>
       <Footer/>
      </div>
     </BrowserRouter>
