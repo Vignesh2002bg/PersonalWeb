@@ -1,23 +1,26 @@
-import { useState } from 'react'
-import './App.css'
-import HeaderNavbar from './Project Components/HeaderNavbar'
-import AboutPage from './Project Components/AboutPage'
-import SkillCompoent from './Project Components/SkillCompoent'
-import ProjectCompoent from './Project Components/ProjectCompoent'
-import Footer from './Project Components/Footer'
+import { useState } from 'react';
+import './App.css';
+import HeaderNavbar from './Project Components/HeaderNavbar';
+import AboutPage from './Project Components/AboutPage';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import SkillCompoent from './Project Components/SkillCompoent';
+import ProjectComponent from './Project Components/ProjectCompoent';
+import Footer from './Project Components/Footer';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
-    <div className=''>
+    <BrowserRouter>
+    <div className='App'>
       <HeaderNavbar/>
       <AboutPage/>
       <SkillCompoent/>
-      <ProjectCompoent/>
+      <ProjectComponent/>
       <Footer/>
-    </div>
-  )
+     </div>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
+import AboutPage from './AboutPage';
 
 function HeaderNavbar() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -7,6 +9,7 @@ function HeaderNavbar() {
         setMenuOpen(!menuOpen);
     };
     return (
+        <div className=' bg-white ' id='home'>
         < div className='bg-[#432749]'>
             <div className="container md:flex items-center justify-between  w-[92%] mx-auto bg-[#432749]">
                 <div className='flex justify-between'>
@@ -29,12 +32,12 @@ function HeaderNavbar() {
                 
                 <nav className="hidden gap-5 mb-0 font-semibold text-white md:flex">
                     <ul className="flex">
-                        <li className="p-2 mx-2 my-2 hover:text-[#cbacd2]"><a href=""> Home</a></li>
-                        <li className="p-2 mx-2 my-2 hover:text-[#cbacd2]"><a href="">About</a></li>
-                        <li className="p-2 mx-2 my-2 hover:text-[#cbacd2]"><a href="">Skill</a></li>
-                        <li className="p-2 mx-2 my-2 hover:text-[#cbacd2]"><a href="">Project</a></li>
-                        <li className="p-2 mx-2 my-2 hover:text-[#cbacd2]"><a href="">Quotes</a></li>
-                        <li className="p-2 mx-2 my-2 hover:text-[#cbacd2]"><a href="">Contact</a></li>
+                        <li className="p-2 mx-2 my-2 hover:text-[#cbacd2]"><Link  to='#home' smooth>Home</Link></li>
+                        <li className="p-2 mx-2 my-2 hover:text-[#cbacd2]"><Link  to='#about'smooth>About</Link></li>
+                        <li className="p-2 mx-2 my-2 hover:text-[#cbacd2]"><Link  to='#skill' smooth>Skill</Link></li>
+                        <li className="p-2 mx-2 my-2 hover:text-[#cbacd2]"><Link  to='#project' smooth>Project</Link></li>
+                        <li className="p-2 mx-2 my-2 hover:text-[#cbacd2]"><Link to='#quotes' smooth>Quotes</Link></li>
+                        <li className="p-2 mx-2 my-2 hover:text-[#cbacd2]"><Link  to='#contact' smooth>Contact</Link></li>
                     </ul>
                 </nav>
                 
@@ -43,16 +46,18 @@ function HeaderNavbar() {
                 {menuOpen && (
                     <div className="md:hidden">
                         <ul className="gap-5 font-semibold text-white">
-                            <li className="p-2 mx-2 my-2 hover:text-[#cbacd2]"><a href=""> Home</a></li>
-                            <li className="p-2 mx-2 my-2 hover:text-[#cbacd2]"><a href="">About</a></li>
-                            <li className="p-2 mx-2 my-2 hover:text-[#cbacd2]"><a href="">Skill</a></li>
-                            <li className="p-2 mx-2 my-2 hover:text-[#cbacd2]"><a href="">Project</a></li>
-                            <li className="p-2 mx-2 my-2 hover:text-[#cbacd2]"><a href="">Quotes</a></li>
-                            <li className="p-2 mx-2  hover:text-[#cbacd2]"><a href="">Contact</a></li>
+                            <li className="p-2 mx-2 my-2 hover:text-[#cbacd2]"><Link  to='#home' smooth>Home</Link></li>
+                            <li className="p-2 mx-2 my-2 hover:text-[#cbacd2]"><Link  to='#about'smooth>About</Link></li>
+                            <li className="p-2 mx-2 my-2 hover:text-[#cbacd2]"><Link  to='#skill' smooth>Skill</Link></li>
+                            <li className="p-2 mx-2 my-2 hover:text-[#cbacd2]"><Link  to='#project' smooth>Project</Link></li>
+                            <li className="p-2 mx-2 my-2 hover:text-[#cbacd2]"><Link to='#quotes' smooth>Quotes</Link></li>
+                            <li className="p-2 mx-2  hover:text-[#cbacd2]"><Link  to='#contact' smooth>Contact</Link></li>
                         </ul>
                     </div>
                 )}
             </div>
+            
+        </div>
         </div>
     );
 }

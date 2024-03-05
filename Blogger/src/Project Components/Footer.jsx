@@ -1,6 +1,6 @@
 function Footer() {
     return ( 
-        <div className="bg-[#E2E8F0]">
+        <div className="bg-[#E2E8F0]" id="contact">
         <div className=" container mx-auto w-[92%] bg-[#E2E8F0] flex flex-col items-center justify-center ">
                 <div className="mt-5">
                     <ul className="flex">

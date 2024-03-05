@@ -1,8 +1,11 @@
 import logoImage from '../assets/Profile.png';
+import HeaderNavbar from './HeaderNavbar';
+import SkillCompoent from './SkillCompoent';
 
 function AboutPage() {
     return (
-        <div className='bg-[#432749]'>
+        <div>
+        <div className='bg-[#432749]' id="about">
         <div className='hidden md:block bg-[#432749] mx-auto w-[92%]'>
         <div className="container grid grid-cols-2 gap-4 pt-5  mb-0 ml-5  ">
             <div className='mx-auto my-auto'>
@@ -16,9 +19,8 @@ function AboutPage() {
                     experienced professionals to drive mutual growth and success.
                 </p>
                 <div className=' my-3'>
-                <a href='' className='p-2 mx-auto my-2 text-white rounded-lg bg-slate-400 justify-items-center hover:bg-slate-600'>View Resume</a>
+                <a href='https://github.com/Vignesh2002bg/Certificate-and-Resume' className='p-2 mx-auto my-2 text-white rounded-lg bg-slate-400 justify-items-center hover:bg-slate-600'>View Resume</a>
                 </div>
-                
             </div>
             <div className='mx-auto my-auto mb-0'>
                 {/* Set max-height to limit image size */}
@@ -38,13 +40,15 @@ function AboutPage() {
                     world, I am committed to leveraging my skills and learning from
                     experienced professionals to drive mutual growth and success.
                 </p>
-                <button className='p-2 mx-4 my-2 text-white rounded-lg justify-items-end bg-slate-400 hover:bg-slate-600'>View Resume</button>
+                <div className='pb-5 my-3 mx-3'>
+                <a href='https://github.com/Vignesh2002bg/Certificate-and-Resume' className='p-2 mx-auto my-2 text-white rounded-lg bg-slate-400 justify-items-center hover:bg-slate-600'>View Resume</a>
+                </div>
             </div>
             
         </div>
         </div>
         </div>
-        
+        </div>
     );
 }
 

@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 
 function ProjectComponent() {
   const CardData = [
@@ -10,7 +11,7 @@ function ProjectComponent() {
 
   return ( 
       <div className="">
-      <div className="container mx-auto  w-[92%] justify-center items-center  ">
+      <div className="container mx-auto  w-[92%] justify-center items-center " id="project">
         <h1 className=" text-[#432749] font-bold text-center text-2xl mt-16 mb-10">Project Source</h1>
         <div className=" grid md:grid-cols-2 xl:grid-cols-3 gap-4 mt-3 mb-5">
           {CardData.map((data)=>
